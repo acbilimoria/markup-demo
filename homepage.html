@@ -1,0 +1,812 @@
+<html>
+
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<head>
+<title>cado</title>
+<style>
+    html {
+        background-color: white;
+    }
+    body {
+        font-family: 'Varela Round';
+    }
+    .titles {
+        color: grey;
+        font-size: 18px;
+        padding: 20px;
+    }
+    a:hover {
+        text-decoration: none;
+        color: black;
+    }
+    .header {
+        padding-left: 1%;
+        padding-right: 2%;
+        min-height: 7em;
+        line-height: 7em;"
+    }
+    .footer {
+        padding:50px;
+        box-sizing:border-box;
+        
+    }
+    #hero-banner {
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: transparent;
+        background-image: url('photo-1436397543931-01c4a5162bdb.jpg');
+        background-origin: padding-box;
+        background-position: bottom center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: block;
+        min-height: 618px;
+        padding-bottom: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
+        position: relative;
+        color: white;
+    }
+    .item.square {
+        width: 270px;
+        height: 225px;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: transparent;
+        background-origin: padding-box;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: block;
+        position: relative;
+        color: white;
+        margin-right: 10px;
+    }
+    .item.rectangle {
+        width: 250px;
+        height: 350px;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: transparent;
+        background-origin: padding-box;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: block;
+        position: relative;
+        color: white;
+        margin-right: 10px;
+    }
+    .item.rectangle-two {
+        width: 500;
+        height: 225px;
+        background-attachment: scroll;
+        background-clip: border-box;
+        background-color: transparent;
+        background-origin: padding-box;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover; 
+        display: block;
+        position: relative;
+        color: white;
+        margin-right: 10px;
+    }
+    .benjamin-franklin {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/0d/Peale_-_Benjamin_Franklin.jpg);
+    }
+    .amazonos {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b1/014_Amazonas_TaniaFraga_15.JPG);
+    }
+    .gervais {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/f/f6/Squatina_angelus_-_Gervais.jpg);
+    }
+    .chair {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/9f/Armchair_%28PSF%29.png);
+    }
+    .flona {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/ea/Flona_do_Tapaj%C3%B3s_02.jpg);
+    }
+    .penguin {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/d/de/Imperador_2p.jpg);
+    }
+    .chair-two {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/7/76/Chair.png);
+    }
+    .burger {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/e/e8/Hamburger_sandwich.jpg);
+    }
+    .skyline {
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/0/00/Topeka_night_skyline.jpg);
+    }
+    .card-top {
+        top: 0px;
+        right: 0px;
+        text-align: right;
+        font-size: 20px;
+        margin: 10px;
+        margin-right: 30px;
+        text-shadow: -1px 0 #333, 0 1px #333, 1px 0 #333, 0 -1px #333;
+        position: relative;
+    }
+    .card-bottom {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        text-align: left;
+        font-size: 35px;
+        margin: 10px;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+    #hero-content {
+        position: absolute;
+        bottom: 21%;
+        left: 3%;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    #hero-notifications {
+        position: absolute;
+        top: 5%;
+        right: 3%;
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .popover-footer {
+        background-color: lightgrey;
+        opacity: 0.4;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%;
+        overflow: hidden;
+        font-weight: bold;
+        line-height: 35px;
+    }
+    h1 {
+        font-size: 80px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h2 {
+        font-size: 35px;
+    }
+    .navbar {
+        margin-bottom: 0px;
+    }
+    .fa {
+        color: grey;
+    }
+    .fa-social:hover {
+        color: black;
+    }
+    .fa:hover {
+        cursor: pointer;
+        text-decoration: none;
+        color: black;
+        opacity: 1.0;
+    }
+    span {
+        display: inline-block;
+        margin-left: 10px;
+        margin-right: 10px;
+        opacity: 0.6;
+    }
+    .hero-alert-icons {
+        font-size: 60%;
+        margin-right: 5px;
+    }
+    hr#invisible {
+        background: none;
+        clear: both;
+        float: none;
+        width: 100%;
+        height: 1px;
+        border: none;
+    }
+    a#see-all:hover {
+        opacity: 1.0 !important;
+        color: black !important;
+    }
+    div.container {
+        position:relative;
+        bottom: 0;
+        width: 100%;
+        height: 250%;
+    }
+    div#sidebar {
+        position: absolute;
+        top:0;
+        bottom:0;
+        left:0;
+        width: 32%;
+        background: #1B1919;
+    }
+    div.sub-headers {
+        float: right;
+        width: 100%;
+        height: 6%;
+    }
+    div#tabs {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 68%;
+    }
+    div.board-tab {
+        width: 100%;
+        margin-top: 0;
+        height: 94%;
+        background: #F0F0F0;
+        padding: 40 40 40 40;
+    }
+    div#avatar-section {
+        float: left;
+        width: 100%;
+        height: 20%;
+    }
+    div#profile-stats {
+        float: left;
+        width: 100%;
+        height: 10%;
+    }
+    div#profile-activity {
+        float: left;
+        height: 70%;
+        width: 100%;
+    }
+    .avatar-box {
+        width: 100%;
+    }
+    .avatar-box img {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto; 
+        margin-top: 40px;
+    }
+    .round {
+        border-radius: 24px;
+    }
+    .btn-custom {
+        color: grey;
+        background-color: #1B1919;
+        border-color: grey;
+    }
+    .btn-custom:hover {
+        background-color: white;
+        border-color: #1B1919;
+    }
+    .btn-success {
+        background-color: #54C571;
+    }
+    .btn-success:hover {
+        background-color: green;
+    }
+    button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .inbox-avatar img {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+    }
+    .popover {
+        max-width: 333px;
+        font-family: 'Varela Round';
+        font-size: 13px;
+    }
+    div.popover-content {
+        padding: 24px 24px 24px 24px;
+    }
+    .user-name {
+        padding-left: 10px;
+        font-weight: bold;
+    }
+    .timestamp {
+        color: lightgrey;
+    }
+    .message {
+        padding-left: 45px;
+        color: grey;
+    }
+    p.time-left::after {
+        font-family: FontAwesome;
+        color: white;
+        content: "\f111";
+        right: -16px;
+        position: relative;
+    }
+    p.time-right::before {
+        font-family: FontAwesome;
+        color: white;
+        content: "\f111";
+        left: -21px;
+        position: relative;
+    }
+    .events:hover {
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .card-hidden {
+        background-color:rgba(0,102,153,0.5);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+    }
+    .card-hidden:hover {
+        cursor: pointer;
+    }
+    .navbar-default {
+        min-height: 7em;
+        background-color: white;
+        line-height: 7em;
+    }
+    #see-all-emails p {
+        text-align: center;
+        margin-bottom: 0px;
+    }
+#user-title {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+#user-name {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+}
+#followers {
+    padding-right: 100px;
+    float: right;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+#avatar-button-group {
+    padding-top: 25px;
+    width: 100%;
+    text-align: center;
+}
+#stories {
+    padding-left: 100px;
+    float: left;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 15px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="pull-left header">
+            <ul style="padding-left: 22px;">
+                <i class="fa fa-pied-piper-alt fa-3x" style="color:black;"></i>
+                <a href="#overview" class="titles">overview</a>
+                <a href="#friends" class="titles">friends</a>
+                <a href="#your-board" class="titles your-board">your board</a>
+                <a href="#" class="titles" id="inbox-popover-button">inbox</a>
+            </ul>
+        </div>
+        <div class="pull-right header">
+            <ul>
+                <span class="fa fa-stack fa-large">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i style="color:white;" class="fa fa-search fa-stack-1x"></i>
+                </span>
+                <span class="fa fa-stack fa-large">
+                    <i style="color:red;" class="fa fa-circle fa-stack-2x"></i>
+                    <i style="color:white;" class="fa fa-plus fa-stack-1x"></i>
+                </span>
+                <span class="fa fa-stack fa-large">
+                    <i style="color:blue" class="fa fa-circle fa-stack-2x"></i>
+                    <i style="color:yellow;" class="fa fa-plus fa-stack-2x"></i>
+                </span>
+            </ul>
+        </div>
+    </nav>
+    <div id="hero-banner">
+        <div id="hero-content">
+            <span style="opacity:1.0;">Featured set of pins -- 10th December, 2014</span>
+            <h1>Monument Decor</h1>
+        </div>
+        <div id="hero-notifications">
+            <h2><i style="color:yellow;" class="fa fa-thumb-tack hero-alert-icons"></i> 142
+                <i style="color:white; margin-left:20px;" class="fa fa-heart hero-alert-icons"></i> 82
+            </h2>
+        </div>
+    </div><!-- /hero-banner -->
+    <!-- popover hidden content -->
+    <div id="inbox-popover-content" style="display:none;">
+        <div id="messages-popover">
+            <div class="message-container">
+                <div class="inbox-avatar pull-left">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/kurafire/48.jpg" alt="@kurafire">
+                    </div>
+                <div class="sender-line">
+                    <div class="sender-name pull-left">
+                        Jack Hemsley
+                    </div>
+                    <div class="timestamp pull-right">
+                        Today, 15:20
+                    </div>
+                </div>
+                <div class="message">
+                    <br />
+                    Hey dude, I love the latest Benjamin Franklin pin you added to your new board...
+                </div>
+            </div> <!-- / message-container -->
+            <div class="message-separator">
+                <hr />
+            </div>
+            <div class="message-container">
+                <div class="inbox-avatar pull-left">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/ladylexy/73.jpg" alt="@ladylexy">
+                </div>
+                <div class="sender-line">
+                    <div class="sender-name pull-left">
+                        Jenny Brock
+                    </div>
+                    <div class="timestamp pull-right">
+                        Today, 12:27
+                    </div>
+                </div>
+                <div class="message">
+                    <br />
+                    Ben Franklin is such an inspiration.  I definitely hope to see more of your hip new furniture.
+                </div>
+            </div> <!-- /message-container -->
+        </div> <!-- /messages-popover -->
+        <div class="message-separator">
+            <hr id="invisible"/>
+            <div id="see-all-emails" class="popover-footer">
+                <p><a href="#" id="see-all" style="color:grey;">see all</a></p>
+            </div>
+        </div>
+    </div> <!-- / inbox-popover-content --> 
+    <div class="container">
+        <div id="sidebar">
+            <div id="avatar-section">
+                <div class="avatar-box">
+                    <img src="https://s3.amazonaws.com/uifaces/faces/twitter/enda/128.jpg" alt="@enda">
+                </div>
+                <div id="user-name">
+                    Carl von Hoff
+                </div>
+
+                <div id="user-title">
+                    Furniture Designer
+                </div>
+
+                <div id="avatar-button-group">
+                    <button type="button" class="round btn btn-success"><i style="color:#1B1919;" class="fa fa-user-plus"></i> following</button>
+                    <button type="button" class="round btn btn-custom"><i class="fa fa-comment"></i> message</button>
+                </div>
+            </div><!-- /avatar-section -->
+            <div id="profile-stats">
+                <hr style="width:80%; border-color: #606060; margin-top:40px;"/>
+
+                <div id="stories">
+                    <p style="margin-bottom:0px;">874</p>
+                    <p style="font-size:15px; font-weight: none; padding-top:0;">Stories</p>
+                </div>
+
+                <div id="followers">
+                    <p style="margin-bottom:0px;">10M</p>
+                    <p style="font-size:15px; font-weight: none; padding-top:0;">Followers</p>
+                </div>
+            </div><!-- /profile-stats -->
+            <div id="profile-activity">
+                <hr style="width:80%; border-color: #606060; padding-top:30px;"/>
+                <div id="profile-left" style="width: 50%; height: 85%;  float: left; border-right: solid #606060; border-width: 1px; padding-right: 10px">
+                    <div id="event-one" class="events" style="float: right; width: 75%; height:15%; text-align: right;">
+                        <p class="time-left" style="color: grey; font-size: 13px; margin-bottom: 3px;">10 minutes ago</p>
+                        <p style="color: white; font-size: 14px; padding-right: 5px;">Pinned <i>Nordic Architecture</i> to his board.</p>
+                    </div>
+                    <div id="event-three" class="events" style="float: right; width: 75%; height:15%; text-align: right; margin-top: 50%;">
+                        <p class="time-left" style="color: grey; font-size: 13px; margin-bottom: 3px;">30 minutes ago</p>
+                        <p style="color: white; font-size: 14px; padding-right: 5px;">Something happened</p>
+                    </div>
+                    <div id="event-five" class="events" style="float: right; width: 75%; height:15%; text-align: right; margin-top: 50%;">
+                        <p class="time-left" style="color: grey; font-size: 13px; margin-bottom: 3px;">2 hours ago</p>
+                        <p style="color: white; font-size: 14px; padding-right: 5px;">Something ELSE happened!</p>
+                    </div>
+                    <div id="event-seven" class="events" style="float: right; width: 75%; height:15%; text-align: right; margin-top: 50%;">
+                        <p class="time-left" style="color: grey; font-size: 13px; margin-bottom: 3px;">One month ago</p>
+                        <p style="color: white; font-size: 14px; padding-right: 5px;">Furniture was invented</p>
+                    </div>
+                </div><!-- /profile-left-->
+                <div id="profile-right" style="width: 50%; height: 85%; float: right;">
+                    <div id="event-two" class="events" style="float: left; width: 75%; height:15%; text-align: left; margin-top: 50%; padding-left:15px;">
+                        <p class="time-right" style="color: grey; font-size: 13px; margin-bottom: 3px;">10 minutes ago</p>
+                        <p style="color: white; font-size: 14px; padding-right: 5px;">Updated his <i>profile picture.</i></p>
+                    </div>
+                    <div class="events" id="event-four" style="float: left; width: 75%; height:15%; text-align: left; margin-top: 50%; padding-left:15px;">
+                        <p class="time-right" style="color: grey; font-size: 13px; margin-bottom: 3px;">45 minutes ago</p>
+                        <p style="color: white; font-size: 14px; padding-right: 5px;">Lorem Something Ipsum</i></p>
+                    </div>
+                    <div class="events" id="event-six" style="float: left; width: 75%; height:15%; text-align: left; margin-top: 50%; padding-left:15px;">
+                        <p class="time-right" style="color: grey; font-size: 13px; margin-bottom: 3px;">1 week ago</p>
+                        <p style="color: white; font-size: 14px; padding-right: 5px;">Lorem Else Ipsum</i></p>
+                    </div>
+                </div><!-- /profile-right -->
+            </div><!-- /profile-activity -->
+        </div> <!-- /sidebar -->
+        <div id="tabs">
+            <div style="width:100%; height:6%; position:relative;">
+                <div class="sub-headers pull-left header">
+                    <ul style="padding-left:0px;">
+                        <a href="#board" class="titles" style="color:black;">board</a>
+                        <a href="#following" class="titles">following</a>
+                        <a href="#GuestBook" class="titles">guest book</a>
+                        <div class="pull-right" style="right:2%;">
+                            <a href="#Invites" class="titles">invites</a>
+                            <span class="fa fa-stack fa-large">
+                                <i style="color:red;" class="fa fa-circle fa-stack-2x"></i>
+                                <i style="color:white;" class="fa fa-stack-1x">8</i>
+                            </span>
+                        </div>
+                    </ul>
+                </div><!-- /sub-headers -->
+            </div>
+            <div class="board-tab">
+                <div id="container">
+                    <div class="item square benjamin-franklin">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left: 60px; margin-top: 65px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i> 10 
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i> 3 
+                        </div>
+                        <div class="card-bottom">
+                            Ben Franklin
+                        </div>
+                    </div>
+                    <div class="item square amazonos">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left: 60px; margin-top: 65px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>11
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i>34
+                        </div>
+                        <div class="card-bottom">
+                            The Amazon
+                        </div>
+                    </div>
+                    <div class="item square skyline">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left: 60px; margin-top: 65px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>9
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i>1
+                        </div>
+                        <div class="card-bottom">
+                            KCMO
+                        </div>
+                    </div>
+                    <div class="item square flona">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left: 60px; margin-top: 65px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>0
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i>13867
+                        </div>
+                        <div class="card-bottom">
+                            Flona
+                        </div>
+                    </div>
+                    <div class="item rectangle penguin">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left:50px; margin-top:150px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>8
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i>8
+                        </div>
+                        <div class="card-bottom">
+                            Critters
+                        </div>
+                    </div>
+                    <div class="item rectangle gervais">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left:50px; margin-top:150px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>1
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i>1
+                        </div>
+                        <div class="card-bottom">
+                            Misc
+                        </div>
+                    </div>
+                    <div class="item rectangle chair">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left:50px; margin-top:150px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>0
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i>0
+                        </div>
+                        <div class="card-bottom">
+                            Hip new furniture
+                        </div>
+                    </div>
+                    <div class="item rectangle chair-two">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-left:50px; margin-top:150px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>1
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;;" class="fa fa-heart"></i>1
+                        </div>
+                        <div class="card-bottom">
+                            Cool chairs
+                        </div>
+                    </div>
+                    <div class="item rectangle-two burger">
+                        <div class="card-hidden" style="display: none;">
+                            <div style="margin-top:75px; margin-left: 175px;">
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-pencil-square-o fa-stack-1x"></i>
+                                </span>
+                                <span class="fa fa-stack fa-2x">
+                                    <i style="color:white;" class="fa fa-circle fa-stack-2x"></i>
+                                    <i style="color:#006699;opacity:0.5;" class="fa fa-trash-o fa-stack-1x"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="card-top">
+                             <i style="color:yellow; margin-right: 5px; margin-left: 5px;" class="fa fa-thumb-tack"></i>0
+                             <i style="color:white; margin-right: 5px; margin-left: 5px;" class="fa fa-heart"></i>3
+                        </div>
+                        <div class="card-bottom">
+                            In And Out
+                        </div>
+                     </div>
+                </div>
+            </div><!-- /board-tab -->
+        </div><!-- /tabs -->
+    </div><!-- /container -->
+    <footer class="footer navbar-bottom" style="border-top-color: black;">
+        <div class="social-icons text-center">
+            <span class="fa fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+            <span class="fa fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+            <span class="fa fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-google-plus fa-stack-1x"></i>
+            </span>
+            <span class="fa fa-stack fa-lg">
+                <i class="fa fa-square-o fa-stack-2x"></i>
+                <i class="fa fa-youtube fa-stack-1x"></i>
+            </span>
+      </div>
+    </footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/packery/1.4.3/packery.pkgd.min.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $("#inbox-popover-button").popover({
+            html : true,
+            placement: 'bottom',
+            content: function() {
+              return $('#inbox-popover-content').html();
+            },
+        });
+        $('#container').packery({
+            itemSelector: '.item',
+            gutter: 10
+        });
+        $(".item").mouseover(function () {
+            $(this).find(".card-hidden").toggle()
+        });
+        $(".item").mouseout(function () {
+            $(this).find(".card-hidden").toggle()
+        });
+    })
+</script>
+</html>
